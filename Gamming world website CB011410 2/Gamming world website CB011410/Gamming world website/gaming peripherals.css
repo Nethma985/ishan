@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(images/Screenshot\ 2025-01-15\ 124356.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    -webkit-text-fill-color:rgb(0, 0, 0);
+    text-size-adjust: 50px;
+    font-weight: bold;
+    
+    
+}
+
+section {
+    margin: 40px 0;
+    -webkit-text-fill-color: rgba(239, 192, 255, 0.959);
+    text-align: center;
+    font-weight: bold;
+}
+
+#peripherals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.peripheral {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgb(55, 5, 58);
+}
+
+.peripheral img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.peripheral .price {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #c694bc;
+}
+
+.peripheral:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #peripherals-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
